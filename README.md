@@ -59,8 +59,3 @@ pip install -r requirements.txt
 streamlit run Dashboard.py
 ```
 
-## **📝 License**  
-This project is open-source and available under the **MIT License**.  
-
-## **⭐ Contribute**  
-Feel free to **fork the repository** and submit **pull requests** to improve the system! 🚀
