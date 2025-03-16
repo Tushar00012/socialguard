@@ -43,14 +43,9 @@ In today's digital world, **misinformation spreads rapidly**, leading to social 
 - Expand support to **more platforms (TikTok, WhatsApp, Telegram, Reddit)**.  
 - Enhance **fake account detection** using behavioral analysis.  
 - Implement **real-time misinformation heatmaps** for geographic tracking.  
-- Collaborate with **government bodies** to regulate online misinformation.  
+- Collaborate with **government bodies** to regulate online misinformation.
 
-## **👨‍💻 Team Members**  
-- **Garbhit Sharma** (Team Leader)  
-- **Kashish Verma**  
-- **Udit Dwivedi**  
-- **Tushar Ranjan**  
-
+  
 ## **📌 How to Run Locally**  
 ```bash
 # Clone the repository
