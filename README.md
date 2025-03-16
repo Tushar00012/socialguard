@@ -49,7 +49,7 @@ In today's digital world, **misinformation spreads rapidly**, leading to social 
 ## **📌 How to Run Locally**  
 ```bash
 # Clone the repository
-git clone https://github.com//GarbhitSh//socialguard.git
+git clone https://github.com/GarbhitSh/socialguard.git
 cd socialguard
 
 # Install dependencies
