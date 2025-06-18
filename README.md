@@ -36,16 +36,6 @@ With the rise of **social media**, misinformation is spreading **faster than eve
 ![kcash - Execute 4 0](https://github.com/user-attachments/assets/68fe3b6f-aa03-452e-981d-0aab1525d6da)
 
 
-### 🛠️ Module Breakdown
-
-| Module              | Description                                         |
-|---------------------|-----------------------------------------------------|
-| `scraper.py`        | Scrapes videos and metadata                         |
-| `nlp_transcriber.py`| Converts audio to text and verifies using NLP       |
-| `ml_model.py`       | AI model to detect misinformation                   |
-| `dashboard.py`      | UI for visualizing flagged content                  |
-| `takedown.py`       | Sends reports and takedown requests                 |
-
 ---
 
 ## 🛠️ Tech Stack  
