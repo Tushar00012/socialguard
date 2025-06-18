@@ -1,55 +1,96 @@
+# 🛡️ Social Guard  
+### *Preventing the Spread of Misinformation using AI & ML*
 
-# **Social Guard**  
-### Preventing the Spread of Misinformation using AI & ML  
+---
 
-## **🚀 Overview**  
-Social Guard is an **AI-powered misinformation detection system** that helps prevent the spread of false content across platforms like **YouTube, Facebook, and Twitter**. By leveraging **machine learning, web scraping, and natural language processing (NLP)**, it analyzes video metadata, transcribes content, and verifies information against reputable news sources.
+## 🚀 Overview  
+**Social Guard** is an **AI-powered misinformation detection system** that proactively analyzes and flags potentially harmful digital content across platforms like **YouTube, Facebook, and Twitter**. By combining **web scraping**, **NLP**, and **machine learning**, it identifies suspicious content, classifies it, and automates takedown workflows, thereby enhancing **digital trust and safety**.
 
-## **🎯 Problem Statement**  
-In today's digital world, **misinformation spreads rapidly**, leading to social unrest, fake narratives, and even security threats. Manual fact-checking is time-consuming and ineffective at scale. **Social Guard automates misinformation detection and takedown requests**, ensuring a safer and more reliable digital space.
+---
 
-## **🔑 Key Features**  
-✅ **Web Dashboard:** Centralized interface for managing and monitoring detected accounts in real time.  
-✅ **Web Scraper:** Extracts **YouTube videos** based on location and specific criteria for analysis.  
-✅ **Metadata Extractor:** Analyzes account details such as age, engagement, and activity patterns.  
-✅ **Takedown Requests:** Sends removal requests to social media platforms for flagged misinformation.  
-✅ **Transcription & NLP:** Converts multilingual video content to text and cross-verifies with credible news sources.  
-✅ **Machine Learning Model:** Classifies accounts as **Green (Safe), Yellow (Suspicious), Red (Fake/Malicious)**.  
+## 🎯 Problem Statement  
+With the rise of **social media**, misinformation is spreading **faster than ever** — influencing public opinion, triggering unrest, and spreading fake news. Manual fact-checking is slow, unscalable, and often too late. **Social Guard** addresses this challenge through **automated, intelligent misinformation detection and mitigation**.
 
-## **🛠️ Tech Stack**  
+---
+
+## 🔑 Key Features  
+- ✅ **Interactive Dashboard:** Monitor flagged content and accounts in real-time  
+- ✅ **YouTube Scraper:** Automatically fetches videos based on keywords or region  
+- ✅ **Metadata Analyzer:** Evaluates content age, user activity, and engagement  
+- ✅ **Automated Takedown Requests:** Sends notifications for content removal  
+- ✅ **NLP-Powered Transcription:** Transcribes multilingual audio to text and verifies against trustworthy news  
+- ✅ **AI Classification Model:** Labels content as:
+  - 🟢 Green (Safe)
+  - 🟡 Yellow (Suspicious)
+  - 🔴 Red (Fake/Malicious)
+
+---
+
+## 🧠 Methodology  
+![kcash - Execute 4 0 (1)](https://github.com/user-attachments/assets/78b76a27-f9a6-4248-85cd-241f06824f20)
+
+
+---
+
+## 📐 Low-Level Design (LLD)
+![kcash - Execute 4 0](https://github.com/user-attachments/assets/68fe3b6f-aa03-452e-981d-0aab1525d6da)
+
+
+### 🛠️ Module Breakdown
+
+| Module              | Description                                         |
+|---------------------|-----------------------------------------------------|
+| `scraper.py`        | Scrapes videos and metadata                         |
+| `nlp_transcriber.py`| Converts audio to text and verifies using NLP       |
+| `ml_model.py`       | AI model to detect misinformation                   |
+| `dashboard.py`      | UI for visualizing flagged content                  |
+| `takedown.py`       | Sends reports and takedown requests                 |
+
+---
+
+## 🛠️ Tech Stack  
 - **Frontend:** Streamlit  
-- **Backend:** Flask  
-- **Database:** MySql  
-- **Web Scraping:** BeautifulSoup, Selenium  
+- **Database:** MySQL  
+- **Web Scraping:** BeautifulSoup  
 - **Machine Learning:** LLaMA 38B, Scikit-learn, TensorFlow  
-- **APIs Used:** YouTube API, Facebook Graph API  
+- **APIs:** YouTube API, Facebook Graph API  
+- **NLP:** spaCy, NLTK, Google Speech-to-Text
+  ![9](https://github.com/user-attachments/assets/453ac1ba-03db-4485-9c4e-838e72a5fa14)
 
-## **🛠️ How It Works**  
-1. **Fetch YouTube Videos & Channel Data** using web scraping and APIs.  
-2. **Analyze Video Metadata** (upload date, engagement, account credibility).  
-3. **Transcribe Video Content** using NLP and cross-check with reliable news sources.  
-4. **Classify Accounts & Content** using AI-based categorization (Green, Yellow, Red).  
-5. **Generate Reports & Alerts** for authorities, social platforms, and fact-checking agencies.  
-6. **Automate Takedown Requests** for harmful content removal.  
 
-## **📈 Potential & Future Upgrades**  
-### **Potential Applications:**  
-- Used by **journalists & students** as a **digital literacy tool**.  
-- Supports **content creators** in **avoiding false copyright strikes**.  
-- Helps **government agencies** track **cross-border misinformation**.  
-- Assists **social media platforms** in strengthening fact-checking systems.  
+---
 
-### **Future Enhancements:**  
-- Expand support to **more platforms (TikTok, WhatsApp, Telegram, Reddit)**.  
-- Enhance **fake account detection** using behavioral analysis.  
-- Implement **real-time misinformation heatmaps** for geographic tracking.  
-- Collaborate with **government bodies** to regulate online misinformation.
+## 🖼️ Working Images  
 
-  
-## **📌 How to Run Locally**  
+![10](https://github.com/user-attachments/assets/47201aef-b79d-4fd3-b93d-527997c8cfd3)
+
+
+![11](https://github.com/user-attachments/assets/ffaa5d04-03f6-488a-8beb-4ee6a8245d53)
+
+
+
+---
+
+## 📈 Potential Applications  
+- 📰 **Digital Literacy Tool** for journalists, students, and educators  
+- 🎥 Helps **creators** avoid spreading misinformation unknowingly  
+- 🏛️ Useful for **government agencies** to detect and counter propaganda  
+- 🌐 Integrates with **social media platforms** to enhance moderation  
+
+---
+
+## 🚀 Future Enhancements  
+- 🌍 Expand to **WhatsApp, Telegram, X, Reddit**  
+- 🔎 Implement **real-time misinformation heatmaps**  
+- 🧬 Detect **bot-driven activity** and fake accounts using behavioral data  
+- 🤝 Collaborate with **regulatory authorities** and fact-checking orgs  
+
+---
+
+## 📌 How to Run Locally  
 ```bash
 # Clone the repository
-git clone https://github.com/GarbhitSh/socialguard.git
+git clone https://github.com/Tushar00012/socialguard.git
 cd socialguard
 
 # Install dependencies
@@ -57,5 +98,3 @@ pip install -r requirements.txt
 
 # Run the application
 streamlit run Dashboard.py
-```
-
